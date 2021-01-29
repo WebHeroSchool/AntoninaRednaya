@@ -1,0 +1,48 @@
+.main-content__title {
+  font-family: 'BenchNine', sans-serif;
+}
+
+.main-content__content {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+.wrapper {
+  width: 80%;
+  margin: auto;
+}
+
+.header__logo, .header__menu {
+  display: inline-block;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.header__logo {
+  padding: 40px 0;
+}
+.header__menu {
+  display: flex;
+  align-items: center;
+}
+.header__menu_item {
+  padding: 0 13px;
+}
+.header__menu_item:last-child {
+  padding-right: 0;
+}
+
+.main-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-content {
+  width: 30%;
+}
