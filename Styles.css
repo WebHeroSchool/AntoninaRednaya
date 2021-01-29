@@ -24,8 +24,32 @@ body {
   justify-content: space-between;
 }
 .header__logo {
+  position: relative;
   padding: 40px 0;
+  padding-left: 44px;
+  font: bold 24px/31px pt_serif;
 }
+.logo__circle {
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+}
+
+.logo__circle_color_blue {
+  left: 8px;
+  top: 56%;
+  background: #C8D8FB;
+  opacity: .7;
+}
+
+.logo__circle_color_dark-blue {
+  background: #0056EC;
+}
+
 .header__menu {
   display: flex;
   align-items: center;
