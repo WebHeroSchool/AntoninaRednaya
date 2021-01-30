@@ -23,6 +23,7 @@ body {
   display: flex;
   justify-content: space-between;
 }
+
 .header__logo {
   position: relative;
   padding: 40px 0;
