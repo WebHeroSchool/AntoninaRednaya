@@ -55,11 +55,59 @@ body {
   display: flex;
   align-items: center;
 }
+
 .header__menu_item {
-  padding: 0 13px;
+  margin-right: 26px;
+  position: relative;
+  font: 500 18px/21px roboto;
+  color: #000;
+  text-decoration: none;
+  transition: opacity .5s;
 }
+
+.header__menu_item:hover {
+  opacity: .5;
+  cursor: pointer;
+}
+
+.header__menu_item:hover:after {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 3px;
+  background: #0056EC;
+  left: 0;
+}
+
+.header__menu_item:after {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 3px;
+  background: #0056EC;
+  left: 0;
+  opacity: 0;
+  transition: opacity .5s;
+}
+
+.header__menu_item:hover:after, .header__menu_item_active:after {
+  opacity: 1;
+}
+
 .header__menu_item:last-child {
-  padding-right: 0;
+  margin-right: 0;
+}
+
+.header__menu_item_active::after {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 3px;
+  background: #0056EC;
+  left: 0;
 }
 
 .main-section {
