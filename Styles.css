@@ -3,8 +3,7 @@ body {
 }
 
 .wrapper {
-  width: 75.5%;
-  margin: auto;
+  margin: 0 201px 0 197px;
 }
 
 .header__logo, .header__menu {
@@ -22,6 +21,7 @@ body {
   padding-left: 44px;
   font: 700 24px/31px pt_serifbold;
 }
+
 .logo__circle {
   width: 28px;
   height: 28px;
@@ -46,10 +46,12 @@ body {
 .header__menu {
   display: flex;
   align-items: center;
+  padding: 5px 0 0 0;
+
 }
 
 .header__menu_item {
-  margin-right: 26px;
+  margin-right: 27px;
   position: relative;
   font: 500 18px/21px roboto;
   color: #000;
@@ -110,6 +112,7 @@ body {
 
 .main__title {
   font: 1000 67px/87px pt_serifbold;
+  letter-spacing: -1px;
   margin: 0 0 38px 0;
 }
 
@@ -118,7 +121,7 @@ body {
 }
 
 .main__content {
-  font: 200 22px/26px roboto;
+  font: 22px/26px roboto;
   margin: 0 0 41px 0;
   width: 80%;
 }
