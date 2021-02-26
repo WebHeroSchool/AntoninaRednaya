@@ -15,7 +15,7 @@ body {
   justify-content: space-between;
 }
 
-.header__logo {
+.logo {
   position: relative;
   padding: 40px 0;
   padding-left: 44px;
@@ -43,14 +43,14 @@ body {
   background: #0056EC;
 }
 
-.header__menu {
+.menu {
   display: flex;
   align-items: center;
   padding: 5px 0 0 0;
 
 }
 
-.header__menu_item {
+.menu__item {
   margin-right: 27px;
   position: relative;
   font: 500 18px/21px roboto;
@@ -59,12 +59,12 @@ body {
   transition: opacity .3s;
 }
 
-.header__menu_item:hover {
+.menu__item:hover {
   opacity: .5;
   cursor: pointer;
 }
 
-.header__menu_item:hover:after {
+.menu__item:hover:after {
   display: block;
   position: absolute;
   content: "";
@@ -74,7 +74,7 @@ body {
   left: 0;
 }
 
-.header__menu_item:after {
+.menu__item:after {
   display: block;
   position: absolute;
   content: "";
@@ -86,15 +86,15 @@ body {
   transition: opacity .3s;
 }
 
-.header__menu_item:hover:after, .header__menu_item_active:after {
+.menu__item:hover:after, .header__menu_item_active:after {
   opacity: 1;
 }
 
-.header__menu_item:last-child {
+.menu_item:last-child {
   margin-right: 0;
 }
 
-.header__menu_item_active::after {
+.menu__item_active::after {
   display: block;
   position: absolute;
   content: "";
@@ -120,10 +120,10 @@ body {
   background: #ECF3FF;
 }
 
-.main__content {
+.main__subtitle {
   font: 22px/26px roboto;
-  margin: 0 0 41px 0;
   width: 80%;
+  margin: auto;
 }
 
 .main__button {
@@ -139,4 +139,46 @@ body {
 
 .main__button:hover {
   opacity: .5;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+
+  .wrapper {
+    width: 86.5%;
+    margin: auto;
+  }
+  .header {
+    margin-bottom: 5px;
+  }
+
+  .logo {
+    padding: 25px 1px;
+  }
+
+  .main {
+    text-align: center;
+    padding: 74% 0 0;
+    background-size: 87%;
+    background-position: top center;
+  }
+
+  .main__title {
+    margin-bottom: 33px;
+    padding-top: 23px;
+    font: bold 30px/39px pt_serifbold;
+    letter-spacing: 0.1px;
+  }
+
+  .main__subtitle {
+    margin-bottom: 25px;
+    font: 16px/19px Roboto;
+    text-align: center;
+    letter-spacing: 0.5px;
+  }
+  .main__button {
+    font: 500 14px/16px Roboto;
+  }
 }
