@@ -47,7 +47,6 @@ body {
   display: flex;
   align-items: center;
   padding: 14нpx 0 0 0px;
-
 }
 
 .menu__item {
@@ -150,7 +149,6 @@ body {
   align-items: center;  /* центрируем содержимое кнопки */
   position: fixed;
   top: 20px;
-  left: 296px;
   width: 26px;
   height: 44px;
   cursor: pointer;
@@ -216,6 +214,17 @@ body {
   left: 0;
 }
 
+/*скрывает бургер-меню на высоком разрешении*/
+@media (min-width: 769px) {
+  .hamburger-menu {
+    display: none;
+  }
+
+  .menu__box {
+    display: none;
+  }
+}
+/*адаптация для мобильного устройства*/
 @media (max-width: 768px) {
   .menu {
     display: none;
@@ -272,12 +281,66 @@ body {
     font: 500 14px/16px Roboto;
     padding: 16px 21px;
   }
-
-  @media (min-width: 769px) {
-    .hamburger-menu {
-      display: none;
-    }
-
-    .menu__box {
-      display: none;
-    }
+}
+/*адаптация для 1024*/
+@media (min-width: 1024px) and (max-width: 1365px) {
+  .wrapper {
+    margin: auto;
+    width: 91%;
+  }
+  .menu {
+    padding: 8px 0 0 0;
+  }
+  .menu__item {
+    font: 500 14px/16px roboto;
+  }
+  .main__title {
+    font: 700 50px/66px pt_serifbold;
+    letter-spacing: 0;
+  }
+  .main {
+    padding: 103px 57% 300px 0;
+    background: top 85px right no-repeat url("Img/Group.svg");
+    background-size: 55% auto;
+  }
+  .main__subtitle {
+    font: 500 18px/21px roboto;
+    width: 88%;
+    margin-bottom: 41px;
+  }
+  .main__button {
+    font: lighter 14px/16px roboto;
+    padding: 14px 22px;
+  }
+}
+  /*адаптация для разрешения 1366*/
+@media (min-width: 1366px) and (max-width: 1920px) {
+  .wrapper {
+    margin: auto;
+    width: 68%;
+  }
+  .menu {
+    padding: 8px 0 0 0;
+  }
+  .menu__item {
+    font: 500 14px/16px roboto;
+  }
+  .main__title {
+    font: 700 50px/66px pt_serifbold;
+    letter-spacing: 0;
+  }
+  .main {
+    padding: 103px 57% 300px 0;
+    background: top 85px right no-repeat url("Img/Group.svg");
+    background-size: 55% auto;
+  }
+  .main__subtitle {
+    font: 500 18px/21px roboto;
+    width: 88%;
+    margin-bottom: 41px;
+  }
+  .main__button {
+    font: lighter 14px/16px roboto;
+    padding: 14px 22px;
+  }
+}
