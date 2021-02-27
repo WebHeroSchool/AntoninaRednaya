@@ -145,8 +145,8 @@ body {
 }
 
 .menu__btn {
-  display: flex; /* используем flex для центрирования содержимого */
-  align-items: center;  /* центрируем содержимое кнопки */
+  display: flex;
+  align-items: center;
   position: fixed;
   top: 20px;
   width: 26px;
@@ -213,7 +213,6 @@ body {
   visibility: visible;
   left: 0;
 }
-
 /*скрывает бургер-меню на высоком разрешении*/
 @media (min-width: 769px) {
   .hamburger-menu {
@@ -283,7 +282,7 @@ body {
   }
 }
 /*адаптация для 1024*/
-@media (min-width: 1024px) and (max-width: 1365px) {
+@media (min-width: 769px) and (max-width: 1365px) {
   .wrapper {
     margin: auto;
     width: 91%;
