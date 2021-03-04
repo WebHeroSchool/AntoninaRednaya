@@ -170,10 +170,6 @@ body {
   font: 500 30px/35px Roboto;
   text-decoration: none;
 }
-.menu__item:hover {
-  background-color: #CFD8DC;
-}
-
 #menu__toggle:checked ~ .menu__btn > span {
   transform: rotate(45deg);
 }
