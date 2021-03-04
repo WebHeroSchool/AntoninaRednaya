@@ -39,7 +39,6 @@ body {
 .menu {
   display: flex;
   align-items: center;
-  padding: 14нpx 0 0 0px;
 }
 .menu__item {
   margin-right: 27px;
@@ -195,7 +194,6 @@ body {
   .hamburger-menu {
     display: none;
   }
-
   .menu__box {
     display: none;
   }
@@ -205,7 +203,6 @@ body {
   .menu {
     display: none;
   }
-
   .wrapper {
     width: 86.5%;
     margin: auto;
@@ -213,46 +210,38 @@ body {
   .header {
     margin-bottom: 36px;
   }
-
   .logo {
     padding: 25px 0px;
   }
-
   .logo__text {
     display: none;
   }
-
   .logo__circle_color_dark-blue {
     left: 0;
     top: 74%;;
   }
-
   .logo__circle_color_blue {
     left: 8px;
     top: 89%;;
   }
-
   .main {
     text-align: center;
     padding: 74% 0 0;
     background-size: 87%;
     background-position: top center;
   }
-
   .main__title {
     margin-bottom: 33px;
     padding-top: 23px;
     font: bold 30px/39px pt_serifbold;
     letter-spacing: 0.1px;
   }
-
   .main__subtitle {
     margin: 0 0 25px 36px;
     font: 16px/19px Roboto;
     letter-spacing: 0.1px;
     width: 80%;
   }
-
   .main__button {
     font: 500 14px/16px Roboto;
     padding: 16px 21px;
