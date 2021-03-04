@@ -108,6 +108,7 @@ body {
 }
 .main__button {
   display: inline-block;
+  position: relative;
   font: lighter 18px/21px roboto;
   padding: 18px 26px;
   text-decoration: none;
@@ -318,4 +319,35 @@ body {
     font: lighter 14px/16px roboto;
     padding: 14px 22px;
   }
+}
+/*анимация для кнопки*/
+@keyframes button-animation {
+  0% {
+    left: -30px;
+  }
+  30% {
+    left: 110%;
+  }
+  100% {
+    left: 110%;
+  }
+}
+.main__button::after {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 90px;
+    background: #fff;
+    opacity: 0.3;
+    position: absolute;
+    left: -21px;
+    top: -18px;
+    z-index: 1;
+    transform: rotate(45deg);
+    transition: all 0.1s;
+    animation-name: button-animation;
+    animation-duration: 2s;
+    animation-delay: 0.05s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
 }
